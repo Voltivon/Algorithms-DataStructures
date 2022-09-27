@@ -10,7 +10,7 @@ function solution(str){
     if(str.length == 0){
         return []
     }
-    
+    console.log(str.length % 2)
     return(str.length % 2 ? str + "_" : str).match(/../g);
     
  }
