@@ -1,16 +1,15 @@
 function cakes(recipe, available) {
+  var numCakes = [];
   
-  let maxCakes;
-  for(let ingredient in recipe){
-    if(available[ingredient]){
-      const possibleCakes = Math.floor(available[ingredient] / recipe[ingredient] || 0) 
-    if(!maxCakes || possibleCakes < maxCakes){
-      maxCakes = possibleCakes;
+  for(var key in recipe){
+    if(recipe.hasOwnProperty(key)){
+      if(key in available){
+        numCakes.push(Math.floor(available[key] / recipe[key]));
+      }else{
+        return 0;
       }
     }
-    else {
-      return 0
-    }
   }
-  return maxCakes;
-}
+  
+  return Math.min.apply(null, numCakes); 
+  
