@@ -1,0 +1,23 @@
+{
+  "name": "algorithms-datastructures",
+  "version": "1.0.0",
+  "description": "Algorithm and Data Structure Problems",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Voltivon/Algorithms-DataStructures.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Voltivon/Algorithms-DataStructures/issues"
+  },
+  "homepage": "https://github.com/Voltivon/Algorithms-DataStructures#readme",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
